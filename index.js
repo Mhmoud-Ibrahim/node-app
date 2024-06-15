@@ -6,6 +6,8 @@ dotenv.config()
 import dbConnections from './db/dbConnections.js'
 import noteRouter from './db/models/src/modules/notes/notes.routes.js'
 app.use(noteRouter)
+app.get('/', (req, res) => res.send('Hello World mahmoud!'))
+app.get('/notes', (req, res) => res.send('notes joy!'))
 
 
 

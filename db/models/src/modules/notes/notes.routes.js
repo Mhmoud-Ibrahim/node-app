@@ -3,6 +3,7 @@ import { addNote, deleteNote, getAllnotes, getNote, updateNote } from './notes.c
 
 const noteRouter = express.Router()
    
+noteRouter.post('/',getAllnotes)
 noteRouter.post('/notes',addNote)
 noteRouter.get('/notes',getAllnotes)
 noteRouter.get('/notes/:id',getNote)
