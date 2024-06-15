@@ -1,5 +1,7 @@
 import noteModel from "../../../notes.js"
-
+ const hello = async (req,res)=>{
+    res.json({message:"success"})
+ }
 
 // add notes
  const addNote = async(req,res)=>{
@@ -36,5 +38,6 @@ export {
     getNote,
     deleteNote,
     updateNote,
+    hello
 
 }
