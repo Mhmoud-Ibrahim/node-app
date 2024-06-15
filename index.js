@@ -5,8 +5,8 @@ import dotenv from 'dotenv'
 dotenv.config()
 import dbConnections from './db/dbConnections.js'
 import noteRouter from './db/models/src/modules/notes/notes.routes.js'
-app.use( '/api/v1/notes',noteRouter)
 app.use('/',noteRouter)
+
 
 
 
