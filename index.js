@@ -10,9 +10,9 @@ app.use(noteRouter)
 app.get('/', async(req, res) =>{
         const notes =  await  noteModel.find()
          res.json({message:"success",notes})
+         res.send('success')
       }
 )
-app.get('/notes', (req, res) => res.send('notes joy!'))
 
 
 
